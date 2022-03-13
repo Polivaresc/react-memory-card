@@ -1,9 +1,9 @@
-import Scoreboard from './components/Scoreboard';
+import CardGame from './components/CardGame';
 
 function App() {
   return (
     <div className="App">
-      <Scoreboard/>
+      <CardGame/>
     </div>
   );
 }

@@ -1,15 +1,8 @@
 import { useState } from "react";
 
 const Scoreboard = (props) => {
-    const [currentScore, setCurrentScore] = useState(0)
-    const [bestScore, setBestScore] = useState(0)
-
-    if (props === 'goodPlay') {
-        setCurrentScore(currentScore + 1)
-        if (bestScore < currentScore) {
-            setBestScore(currentScore)
-        }
-    } 
+    
+    const {currentScore, bestScore} = props
 
     return (
         <div>
