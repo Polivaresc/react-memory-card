@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import Scoreboard from "./Scoreboard"
+import Cards from "./Cards"
 
 const CardGame = () => {
 
@@ -25,6 +26,8 @@ const CardGame = () => {
     return (
         <div>
             <Scoreboard currentScore={currentScore} bestScore={bestScore}/>
+            <div className="cards"><Cards/></div>
+
             <button onClick={handlePlay}>CARD</button>
         </div>
     )
