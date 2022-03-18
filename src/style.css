@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
 body {
   margin: 0;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-items: center;
-  gap: 30px;
-  
+  gap: 50px;
 }
 
 .card-image {
@@ -24,21 +26,31 @@ body {
 }
 
 .score-board {
-  color: white;
+  color: rgb(214, 187, 146);
   font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 .game-board {
   background-image: url('/public/images/leshysCabin.png');
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
-  height: 100vh;
+  padding: 50px;
 }
 
 header>img {
   width: 100%;
 }
 
-header {
+header, footer {
   background-color: black;
+}
+
+footer {
+  color: rgb(214, 187, 146);
+  text-align: center;
+  font-size: small;
+  padding: 10px;
 }
