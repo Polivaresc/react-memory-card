@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-memory-card/static/css/main.3700bf0c.css",
-    "main.js": "/react-memory-card/static/js/main.9169efde.js",
+    "main.js": "/react-memory-card/static/js/main.74c11965.js",
     "static/media/leshysCabin.png": "/react-memory-card/static/media/leshysCabin.083b33e7ba9c2c347bbd.png",
     "index.html": "/react-memory-card/index.html",
     "main.3700bf0c.css.map": "/react-memory-card/static/css/main.3700bf0c.css.map",
-    "main.9169efde.js.map": "/react-memory-card/static/js/main.9169efde.js.map"
+    "main.74c11965.js.map": "/react-memory-card/static/js/main.74c11965.js.map"
   },
   "entrypoints": [
     "static/css/main.3700bf0c.css",
-    "static/js/main.9169efde.js"
+    "static/js/main.74c11965.js"
   ]
 }
