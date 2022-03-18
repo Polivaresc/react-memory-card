@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/http//Polivaresc.github.io/react-memory-card/static/css/main.2270b1bb.css",
+    "main.js": "/http//Polivaresc.github.io/react-memory-card/static/js/main.91d88a10.js",
+    "static/media/leshysCabin.png": "/http//Polivaresc.github.io/react-memory-card/static/media/leshysCabin.083b33e7ba9c2c347bbd.png",
+    "index.html": "/http//Polivaresc.github.io/react-memory-card/index.html",
+    "main.2270b1bb.css.map": "/http//Polivaresc.github.io/react-memory-card/static/css/main.2270b1bb.css.map",
+    "main.91d88a10.js.map": "/http//Polivaresc.github.io/react-memory-card/static/js/main.91d88a10.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2270b1bb.css",
+    "static/js/main.91d88a10.js"
+  ]
+}
