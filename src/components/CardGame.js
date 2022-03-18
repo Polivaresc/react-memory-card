@@ -26,9 +26,7 @@ const CardGame = () => {
     return (
         <div>
             <Scoreboard currentScore={currentScore} bestScore={bestScore}/>
-            <div className="cards"><Cards/></div>
-
-            <button onClick={handlePlay}>CARD</button>
+            <div className="cards"><Cards handlePlay={handlePlay}/></div>
         </div>
     )
 }
