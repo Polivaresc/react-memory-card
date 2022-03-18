@@ -7,16 +7,38 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-items: center;
   gap: 30px;
+  
 }
 
 .card-image {
   height: auto;
   width: 200px;
-  box-shadow: 5px 5px 5px rgba(112, 106, 106, 0.616);
+  box-shadow: 5px 5px 5px black;
   transition: all .2s ease-in-out;
+  border-radius: 5px;
 }
 
 .card-image:hover {
   cursor: pointer;
   transform: scale(1.05);
+}
+
+.score-board {
+  color: white;
+  font-size: x-large;
+}
+
+.game-board {
+  background-image: url('/public/images/leshysCabin.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+header>img {
+  width: 100%;
+}
+
+header {
+  background-color: black;
 }
