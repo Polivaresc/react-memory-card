@@ -3,10 +3,9 @@ import Scoreboard from "./Scoreboard"
 import uniqid from 'uniqid';
 
 const CardGame = () => {
-
-    const[clicked, setClicked] = useState(false)
     const [currentScore, setCurrentScore] = useState(0)
     const [bestScore, setBestScore] = useState(0)
+    const [clickedCards, setClickedCards] = useState([])
 
     const cards = [
         {text: 'Ant Queen', image: 'images/antQueen.png', id: uniqid()},
@@ -33,13 +32,17 @@ const CardGame = () => {
     
     const randomCards = cards.sort(() => Math.random()-0.5).slice(0, 12)
 
-    const handlePlay = () => {
-        if(!clicked) {
-            setClicked(true)
+    const handlePlay = (e) => {
+
+        const currentCard = cards.find((card) => card.id === e.target.dataset.id)
+
+        if(!clickedCards.includes(currentCard.text)) {
+            setClickedCards(clickedCards.concat(currentCard.text))
             setCurrentScore(currentScore + 1)
         } else {
+            setClickedCards([])
             setCurrentScore(0)
-        }
+        } 
     }
 
     useEffect(() => {
@@ -51,7 +54,7 @@ const CardGame = () => {
     return (
         <div className="game-board">
             <Scoreboard currentScore={currentScore} bestScore={bestScore}/>
-            <div className="cards">{randomCards.map(card => <div key={card.id}><img src={card.image} alt={card.text} className="card-image" onClick={handlePlay}/></div>)}</div>
+            <div className="cards">{randomCards.map(card => <div key={card.id}><img src={card.image} alt={card.text} data-id={card.id} className="card-image" onClick={handlePlay}/></div>)}</div>
         </div>
     )
 }

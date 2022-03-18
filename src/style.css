@@ -22,15 +22,16 @@ body {
 
 .card-image:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(0.9);
 }
 
 .score-board {
   color: rgb(214, 187, 146);
-  font-size: x-large;
-  font-weight: bold;
-  text-align: center;
+  font-size: xx-large;
   padding-bottom: 50px;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
 }
 
 .game-board {
@@ -53,4 +54,11 @@ footer {
   text-align: center;
   font-size: small;
   padding: 10px;
+}
+
+.score {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  gap: 50px;
 }
